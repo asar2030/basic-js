@@ -37,5 +37,7 @@ export default function transform(arr) {
           res.push(arr[i])
       }
   }
-  return res 
+  return res.filter((n) => {
+      return n != undefined && n!= 1337
+    })
 }

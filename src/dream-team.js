@@ -19,6 +19,7 @@ export default function createDreamTeam(members) {
   let res = ''
   for (let i = 0; i < members.length; i++) {
       if (typeof members[i] === 'string' ) {
+          members[i] = members[i].trim();
           arr.push(members[i])
       }
   }
